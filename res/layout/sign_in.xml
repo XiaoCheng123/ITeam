@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:background="@drawable/1C15">
+    <RelativeLayout 
+        android:id="@+id/sign_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true">
+        <TextView 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:text="注册ITeam"
+            />
+    </RelativeLayout>
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/sign_top_layout"
+        android:background="?android:attr/listDivider" />
+
+    <EditText
+        android:id="@+id/sign_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_top_layout"
+	    android:textColor="#000"
+	    android:textSize="15sp"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入手机号"
+         >
+
+    </EditText>
+<EditText
+        android:id="@+id/sign_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_phone"
+	    android:textColor="#000"
+	    android:textSize="15sp"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入组织名"
+         >
+
+    </EditText>
+    <EditText
+        android:id="@+id/sign_password1"
+        android:hint="请输入密码"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_company"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+	    android:textSize="15sp"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:inputType="numberPassword"
+        android:layout_centerVertical="true"
+         />
+
+    <EditText
+        android:id="@+id/sign_password2"
+        android:hint="再次输入密码"
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_password1"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+	    android:textSize="15sp"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:inputType="numberPassword"
+        android:layout_centerVertical="true"
+         />
+        <RelativeLayout 
+        android:id="@+id/sign_down_layout"
+        android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+        android:layout_below="@+id/sign_password2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        
+        >
+         <EditText
+        android:id="@+id/sign_massage"
+        android:hint="验证码"
+		android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+	    android:textSize="15sp"
+	    android:inputType="numberPassword"
+        android:layout_centerVertical="true"/>
+
+         <Button
+             android:id="@+id/sign_massage_button"
+             android:layout_width="110dp"
+             android:layout_height="25dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:textColor="@color/white"
+             android:background="@color/lightskyblue"
+             android:text="获取验证码" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:text="注册"
+        android:background="@color/lightskyblue"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="50dp"
+	    android:layout_marginRight="50dp"
+	    android:layout_marginTop="20dp"
+        android:layout_height="25dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/sign_down_layout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
