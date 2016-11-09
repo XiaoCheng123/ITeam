@@ -4,7 +4,7 @@
     android:layout_height="match_parent" 
     android:orientation="vertical" 
     android:gravity="center_horizontal"
-    android:background="@drawable/1C15">
+   >
     <RelativeLayout 
         android:id="@+id/sign_top_layout"
         android:layout_width="fill_parent"
