@@ -27,6 +27,6 @@ public class WelcomeActivity extends Activity {
                //MyNowActivity.this.finish();
             }
         };
-        timer.schedule(task, 1000 * 1); // 8秒后执行
+        timer.schedule(task, 1000 * 1.5); // 8秒后执行
 	}
 }
