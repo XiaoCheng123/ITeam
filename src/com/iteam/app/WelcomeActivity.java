@@ -18,7 +18,7 @@ public class WelcomeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.welcome);
-        final Intent intent = new Intent(this, Login.class); // 要转向的Activity
+        final Intent intent = new Intent(this, LoginActivity.class); // 要转向的Activity
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
             @Override
@@ -27,6 +27,6 @@ public class WelcomeActivity extends Activity {
                //MyNowActivity.this.finish();
             }
         };
-        timer.schedule(task, 1000 * 1.5); // 8秒后执行
+        timer.schedule(task, 1000 * 1); // 8秒后执行
 	}
 }

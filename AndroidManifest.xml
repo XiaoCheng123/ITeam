@@ -23,9 +23,15 @@
             </intent-filter>
         </activity>
         <activity 
-            android:name=".Longin"
-            android:label="@string/app_name"
+            android:name=".LoginActivity"
             ></activity>
+         <activity 
+            android:name=".SignInActivity"
+            ></activity>
+         <activity 
+            android:name=".Main_IteamActivity"
+            ></activity>
+         
     </application>
 
 </manifest>
